@@ -1,9 +1,11 @@
 from flask import Flask, request
 import requests
 import os
+import openai
 
 app = Flask(__name__)
 
+openai.api_key = os.getenv("OPENAI_API_KEY")
 # This is page access token that you get from facebook developer console.
 PAGE_ACCESS_TOKEN = os.getenv("PAGE_ACCESS_TOKEN")
 # This is API key for facebook messenger.
@@ -18,6 +20,10 @@ def fbverify():
         if not request.args.get("hub.verify_token") == VERIFY_TOKEN:
             return "Verification token missmatch", 403
         return request.args['hub.challenge'], 200
+    return "Hello world", 200
+
+@app.route("/test-ai", methods=['GET'])
+def fbverify():
     return "Hello world", 200
 
 # This function return response to facebook messenger.
