@@ -23,7 +23,7 @@ def fbverify():
     return "Hello world", 200
 
 @app.route("/test-ai", methods=['GET'])
-def fbverify():
+def testai():
     return "Hello world", 200
 
 # This function return response to facebook messenger.
