@@ -1,44 +1,33 @@
-# Facebook Bot Using Python Tutorial with Examples
+# Project Title: Python Flask with OpenAI
+This is a web application built using Python and the Flask framework that utilizes the OpenAI API. The app allows users to input text and receive a response from the OpenAI GPT-3 model.
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+# Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-we will create a facebook messenger bot to get the different types of response such as text, generic, buttons, list, media and feedback response from the bot. Furthermore we will also learn how we will be able to get the files that we share with the bot in chat at server-side in our computer.
+# Prerequisites
+Before you begin, make sure you have the following installed on your system:
 
-Below is tutorial link. By following this tutorial you can create Facebook bot.
-https://www.pragnakalp.com/create-facebook-chatbot-using-python-tutorial-with-examples/
-## Features
+Python 3
+Flask (pip install flask)
+OpenAI API key (sign up at https://beta.openai.com/signup/ to get a key)
+Installing
+Clone the repository to your local machine:
+Copy code
+git clone https://github.com/your-username/python-flask-openai.git
+Navigate to the directory:
+Copy code
+cd python-flask-openai
+Set your OpenAI API key as an environment variable:
+Copy code
+export OPENAI_API_KEY=your_api_key
+Run the app:
+Copy code
+python app.py
+The app should now be running at http://localhost:5000/.
+Using the app
+To use the app, simply enter some text in the input field and submit the form. The response from the OpenAI GPT-3 model will be displayed on the page.
 
-- Text Response
-- Image Response
-- Button Response
-- Feedback Response
-- Generic Response
-- Video Response
-- Quick Reply
-
-## Installation
-
-Requires [Python](https://www.python.org) to run.
-
-Create Virtual Evironment.
-
-```sh
-virtualenv env --python=python3
-```
-
-Activate Virtual Evironment.
-
-```sh
-source env/bin/activate
-```
-
-Install All Required Libraries.
-
-```sh
-pip install -r requirements.txt
-```
-Then Run Python flask App.
-
-```sh
-python faceboo_try.py
-```
+Built With
+Python - The programming language
+Flask - The web framework
+OpenAI - The API provider
