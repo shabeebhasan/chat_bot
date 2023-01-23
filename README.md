@@ -31,3 +31,6 @@ Built With
 Python - The programming language
 Flask - The web framework
 OpenAI - The API provider
+
+# DEMO
+here you can test with the chatbot powered with openai https://www.facebook.com/profile.php?id=100088971683360
